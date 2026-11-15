@@ -1,0 +1,40 @@
+{
+  "name": "depdrift",
+  "version": "1.0.0",
+  "description": "Dependency drift radar for JavaScript monorepos: finds every package.json, flags deps declared at different versions, suggests the highest semver to unify on. CI-ready exit codes, JSON output.",
+  "type": "module",
+  "bin": {
+    "depdrift": "src/main.js"
+  },
+  "main": "src/drift.js",
+  "scripts": {
+    "build": "./build.sh",
+    "test": "vitest run"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "keywords": [
+    "monorepo",
+    "dependencies",
+    "drift",
+    "semver",
+    "package-json",
+    "versions",
+    "static-analysis",
+    "javascript",
+    "ci"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Celine1337/depdrift.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "vitest": "^5.1.0"
+  }
+}
